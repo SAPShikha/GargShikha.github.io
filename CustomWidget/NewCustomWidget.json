@@ -1,8 +1,8 @@
 {
   "eula": "",
-  "vendor": "Danish",
+  "vendor": "Shikha",
   "license": "",
-  "id": "com.danish.sap.sac.chatgpt",
+  "id": "chatGPT SAC",
   "version": "1.0.0",
   "name": "chatGPT SAC",
   "newInstancePrefix": "chatGPTInSAC",
