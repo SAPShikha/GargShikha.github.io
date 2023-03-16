@@ -1,41 +1,55 @@
 {
-	"name": "mycustomwidget",
-	"description": "Hello World",
-	"newInstancePrefix": "mycustomwidget",
-	"eula": "",
-	"vendor": "SAPShikha",
-	"license": "",
-	"id": "mycustomwidget",
-	"version": "1.0.1",
-	"icon": "",
-	"webcomponents": [
-		{
-			"kind": "main",
-			"tag": "custom-button",
-			"url": "https://GargShikha.github.io/CustomWidget/Webcomponent.js",
-			"integrity": ""	,
-			"ignoreIntegrity": true
-			
-		}		
-	],
-	"properties": {
+{
+  "eula": "",
+  "vendor": "Danish",
+  "license": "",
+  "id": "com.danish.sap.sac.chatgpt",
+  "version": "1.0.0",
+  "name": "chatGPT SAC",
+  "newInstancePrefix": "chatGPTInSAC",
+  "description": "A custom widget to integrate chatGPT3 in SAC Analytic application",
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "custom-widget",
+      "url": "https://sapshikha.github.io/GargShikha.github.io/CustomWidget/Webcomponent.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
 		"width": {
 			"type": "integer",
-			"default": 192
+			"default": 1
 		},
 		"height": {
 			"type": "integer",
-			"default": 32
+			"default": 1
 		}
-	},
-	"methods": {
-		"clear": {
-			"description": "Clear the resultset"
+  },
+  "methods": {
+		"post": {
+			"description": "Wrapper for jQuery post",
+			"parameters": [
+				{
+					"name": "APIKey",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "endPoint",
+					"type": "string",
+					"description": ""
+				},
+				{
+					"name": "prompt",
+					"type": "string",
+					"description": ""
+				}
+			],
+			"returnType": "string"
 		}
-	},
-	"events": {
-		"onClick": {
-			"description": "Called when the user clicks the button."
-		}
-	}
+  },
+  "events": {
+  }
 }
