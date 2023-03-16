@@ -2,7 +2,7 @@
   "eula": "",
   "vendor": "Shikha",
   "license": "",
-  "id": "chatGPT SAC",
+  "id": "chatGPT_SAC",
   "version": "1.0.0",
   "name": "chatGPT SAC",
   "newInstancePrefix": "chatGPTInSAC",
